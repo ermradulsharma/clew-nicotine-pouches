@@ -7,10 +7,10 @@ return [
     'stripe_secret_key' => env('STRIPE_SECRET_KEY', ''),
     'stripe_pub_key' => env('STRIPE_PUB_KEY', ''),
     'godirect_sandbox' => env('GODIRECT_SANDBOX', false),
-    'godirect_url' => env('GODIRECT_URL', 'https://clpo.godirectsolutions.com/Plugins/GDWebService/NopService.svc'),
-    'godirect_action' => env('GODIRECT_ACTION', 'http://tempuri.org/ICreateOrderService/CreateOrder'),
-    'godirect_username' => env('GODIRECT_USERNAME', 'Webservice_CLPO@godirectsolutions.com'),
-    'godirect_password' => env('GODIRECT_PASSWORD', 'CL#@P0&Ch%2!'),
+    'godirect_url' => env('GODIRECT_URL', ''),
+    'godirect_action' => env('GODIRECT_ACTION', ''),
+    'godirect_username' => env('GODIRECT_USERNAME', ''),
+    'godirect_password' => env('GODIRECT_PASSWORD', ''),
 
     /*
     |--------------------------------------------------------------------------
