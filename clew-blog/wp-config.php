@@ -42,37 +42,37 @@
 
 /** The name of the database for WordPress */
 
-define( 'DB_NAME', 'clewpouches_db' );
+define('DB_NAME', getenv('DB_DATABASE') ?: 'clewpouches_db');
 
 
 
 /** Database username */
 
-define( 'DB_USER', 'root' );
+define('DB_USER', getenv('DB_USERNAME') ?: 'root');
 
 
 
 /** Database password */
 
-define( 'DB_PASSWORD', '' );
+define('DB_PASSWORD', getenv('DB_PASSWORD') ?: '');
 
 
 
 /** Database hostname */
 
-define( 'DB_HOST', 'localhost' );
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
 
 
 
 /** Database charset to use in creating database tables. */
 
-define( 'DB_CHARSET', 'utf8mb4' );
+define('DB_CHARSET', 'utf8mb4');
 
 
 
 /** The database collate type. Don't change this if in doubt. */
 
-define( 'DB_COLLATE', '' );
+define('DB_COLLATE', '');
 
 
 
@@ -98,21 +98,21 @@ define( 'DB_COLLATE', '' );
 
  */
 
-define( 'AUTH_KEY',         'DJBphPa9qxUNFzr>i}{7-pid] =g##4*Ayb3 ?U~frwh[iWb}6=#cy8+La_aqwFw' );
+define('AUTH_KEY',         'DJBphPa9qxUNFzr>i}{7-pid] =g##4*Ayb3 ?U~frwh[iWb}6=#cy8+La_aqwFw');
 
-define( 'SECURE_AUTH_KEY',  'JLPgLIO^dM(!l%y.@x9ga5+|GT)-`.,ovhNG_r|/5g4b:?1&53#aXDWZjm^2GB^U' );
+define('SECURE_AUTH_KEY',  'JLPgLIO^dM(!l%y.@x9ga5+|GT)-`.,ovhNG_r|/5g4b:?1&53#aXDWZjm^2GB^U');
 
-define( 'LOGGED_IN_KEY',    'cYE>=lLwVD uk0|UF$7$dvMe&<]-qRjlzh[LZh>Y_v57]J+LSdO[Y^7>NX.}Q%.r' );
+define('LOGGED_IN_KEY',    'cYE>=lLwVD uk0|UF$7$dvMe&<]-qRjlzh[LZh>Y_v57]J+LSdO[Y^7>NX.}Q%.r');
 
-define( 'NONCE_KEY',        '8w;[$97W%4cp7np2{PDJa96i*:dfll*~CF:s90yD8$q|<,t9Kz<)Fly1>iR7_i5X' );
+define('NONCE_KEY',        '8w;[$97W%4cp7np2{PDJa96i*:dfll*~CF:s90yD8$q|<,t9Kz<)Fly1>iR7_i5X');
 
-define( 'AUTH_SALT',        '`,Q&C<2I3=$XF:_d##x?5G1Fb~{yXI3KwY~#g~}uITQ],n)Z/UJdY:&/Eg(7M609' );
+define('AUTH_SALT',        '`,Q&C<2I3=$XF:_d##x?5G1Fb~{yXI3KwY~#g~}uITQ],n)Z/UJdY:&/Eg(7M609');
 
-define( 'SECURE_AUTH_SALT', 'gbCCC).[i])&0I?OfRSvL15jmkGQ<J+*a9>9FJ68rjKqW;3:E~p0ZV~$RMAQxd8q' );
+define('SECURE_AUTH_SALT', 'gbCCC).[i])&0I?OfRSvL15jmkGQ<J+*a9>9FJ68rjKqW;3:E~p0ZV~$RMAQxd8q');
 
-define( 'LOGGED_IN_SALT',   '[0[tAv*#DPN.Xr3+cQm%zMFquG(S]*mMk4NNo03dzu9AHcbVNNZlm$U!A1Fqu/j:' );
+define('LOGGED_IN_SALT',   '[0[tAv*#DPN.Xr3+cQm%zMFquG(S]*mMk4NNo03dzu9AHcbVNNZlm$U!A1Fqu/j:');
 
-define( 'NONCE_SALT',       '&]mkp}C #^sf=6S)*Ok@M;M]D#F(_|[~aU+@9I65[.9)AP+uE$f:McokD2Id*bs;' );
+define('NONCE_SALT',       '&]mkp}C #^sf=6S)*Ok@M;M]D#F(_|[~aU+@9I65[.9)AP+uE$f:McokD2Id*bs;');
 
 
 
@@ -178,7 +178,7 @@ define('WP_SITEURL', 'https://clewpouches.com/ecom/clew-blog');
 
 
 
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', false);
 
 
 
@@ -196,10 +196,9 @@ define( 'WP_DEBUG', false );
 
 /** Absolute path to the WordPress directory. */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 
-	define( 'ABSPATH', __DIR__ . '/' );
-
+	define('ABSPATH', __DIR__ . '/');
 }
 
 
@@ -207,4 +206,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 
 require_once ABSPATH . 'wp-settings.php';
-
