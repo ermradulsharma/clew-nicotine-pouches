@@ -1,0 +1,63 @@
+@extends('layouts.admin')
+
+@section('content')
+@include('layouts.parts.admin.header')
+@include('layouts.parts.admin.sidebar')
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="search-form">
+                <a href="{{ route('admin.subadmin.index') }}" class="btn btn-default btn-sm pull-right">Back</a>
+            </div>
+            <!-- OVERVIEW -->
+            <div class="panel panel-headline">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{$name}} &rArr; {{$page}}</h3>
+                </div>
+                <div class="panel-body">
+                    <form class="form" name="subadminForm" id="subadminForm" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="name">Name <span class="text-danger">*</span><span class="error"></span></label>
+                                    <input type="text" name="name" id="name" class="form-control" value="{{ $data->name }}" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="email">Email <span class="text-danger">*</span><span class="error"></span></label>
+                                    <input type="text" name="email" id="email" class="form-control" value="{{ $data->email }}" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="role_id">Role <span class="text-danger">*</span><span class="error"></span></label>
+                                    <select class="form-control" id="role_id" name="role_id">
+                                        <option value="" selected disabled>Role</option>
+                                        @foreach($roles as $role)
+                                        @php $selected = ($data->role_id==$role->id)?'selected':''; @endphp
+                                        <option value="{{ $role->id }}" {{$selected}}>{{ $role->title }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-xs-12 text-center mt20px">
+                                <div class="form-group">
+                                    @method('PUT') @csrf
+                                    <input type="hidden" id="id" name="id" value="{{ $data->id }}">
+                                    <button type="submit" name="subadminUpdate" id="subadminUpdate" class="btn btn-default">
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
