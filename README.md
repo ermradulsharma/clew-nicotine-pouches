@@ -1,87 +1,94 @@
+<p align="center">
+  <img src="public/images/Clew_logo_dark.svg" width="300" alt="Clew Nicotine Pouches Logo">
+</p>
+
 # Clew Nicotine Pouches Platform
 
-Clew Nicotine Pouches is a modern e-commerce platform built with Laravel, designed for the distribution and sale of premium nicotine pouches. The system features a robust age-verification flow, integrated payment gateways, and a comprehensive admin management suite.
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://laravel.com)
+[![Laravel Version](https://img.shields.io/badge/laravel-10.x-red.svg)](https://laravel.com)
+[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
 
-## 🚀 Key Features
+Clew Nicotine Pouches is a premium, high-performance e-commerce platform built with **Laravel 10**. It is specifically engineered for the distribution of nicotine products, featuring integrated age verification, secure payment processing, and a sophisticated admin infrastructure.
 
-### Frontend & Customer Experience
+---
 
-- **Age Verification System**: Integrated middleware to ensure compliance with age restrictions for tobacco/nicotine products.
-- **Dynamic Product Catalog**: Browse products by category, flavour (Blueberry, Citrus, Cool Mint, Spearmint, Wintergreen), and strength (3mg, 6mg, 9mg, 12mg, 15mg).
-- **Advanced Shopping Cart**: Intuitive cart management with coupon code support.
-- **Secure Checkout**: Multi-step checkout process integrated with top-tier payment providers.
-- **Store Locator**: Geographic search and map-based visualization for finding physical store locations.
-- **User Accounts**: Manage profiles, multiple addresses, order history, and product wishlists.
+## ✨ Key Features
 
-### Admin & Management
+### 🛒 Customer Experience
 
-- **Dashboard & Reporting**: Real-time sales analytics and position-based data visualization.
-- **Catalog Management**: Full control over categories, products, variants, and inventory.
-- **Order Processing**: Detailed order tracking and invoice generation.
-- **Store Management**: Bulk import/export functionality for store locations via Excel templates.
-- **Promotion System**: Dynamic coupon and discount management.
-- **Enquiry Handling**: Centralized management for contact-us submissions and newsletter subscriptions.
+- **🛡️ Age Verification**: Strict compliance middleware to ensure age-restricted access.
+- **🍇 Dynamic Catalog**: Advanced filtering by flavor (Blueberry, Citrus, Mint, etc.) and strength (3mg - 15mg).
+- **💳 Multi-Gateway Checkout**: Seamless integration with **Stripe** and **Authorize.Net**.
+- **📍 Store Locator**: Real-time map search and geographic filtering for retail partners.
+- **👤 Personalization**: Detailed user profiles, multiple address management, and persistent wishlists.
+
+### ⚙️ Administrative Control
+
+- **📊 Business Intelligence**: Live sales analytics and product performance reporting.
+- **🏗️ Inventory Management**: Granular control over variants, pricing, and stock levels.
+- **🧾 Automated Invoicing**: Direct PDF generation and order tracking.
+- **🛰️ Partner Logistics**: Bulk import/export tools for retail locations via Excel.
+- **🎟️ Promotional Engine**: Flexible coupon creation and discount rule management.
+
+---
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Laravel 10](https://laravel.com)
-- **Language**: PHP 8.1+
-- **Database**: MySQL
-- **UI Framework**: Bootstrap (via Laravel UI)
-- **Integrations**:
-    - **Payments**: Stripe, Authorize.Net
-    - **Image Processing**: Intervention Image
-    - **Excel Handling**: Maatwebsite Excel
-    - **Webhooks**: GoDirect integration
+| Technology                 | Purpose                        |
+| :------------------------- | :----------------------------- |
+| **Laravel 10**             | Core Application Framework     |
+| **PHP 8.1+**               | Primary Backend Language       |
+| **MySQL**                  | Relational Database Management |
+| **Bootstrap**              | Responsive UI Framework        |
+| **Stripe / Authorize.Net** | Financial Infrastructure       |
+| **Intervention Image**     | Dynamic Asset Optimization     |
 
-## 📦 Installation & Setup
+---
 
-1. **Clone the repository**
+## 🚀 Quick Start
 
-    ```bash
-    git clone <repository-url>
-    cd clew-pouches
-    ```
+### 1. Prerequisites
 
-2. **Install Dependencies**
+Ensure you have **PHP 8.1+** and **Composer** installed on your system.
 
-    ```bash
-    composer install
-    npm install
-    npm run build
-    ```
+### 2. Installation
 
-3. **Environment Configuration**
+```bash
+git clone https://github.com/ermradulsharma/clew-nicotine-pouches.git
+cd clew-pouches
+composer install
+npm install && npm run build
+```
 
-    ```bash
-    cp .env.example .env
-    php artisan key:generate
-    ```
+### 3. Configuration
 
-    _Configure your database and payment API keys (Stripe, Authorize.Net) in the `.env` file._
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-4. **Database Setup**
+> [!IMPORTANT]
+> Update your `.env` file with Database and Payment API credentials.
 
-    ```bash
-    php artisan migrate
-    php artisan db:seed
-    ```
+### 4. Database Setup
 
-5. **Storage Link**
+```bash
+php artisan migrate --seed
+php artisan storage:link
+```
 
-    ```bash
-    php artisan storage:link
-    ```
+### 5. Launch
 
-6. **Serve the Application**
-    ```bash
-    php artisan serve
-    ```
+```bash
+php artisan serve
+```
 
-## 🔐 Admin Access
+---
 
-Default admin routes are accessible at `/admin`. Authentication and role-based access control (Admin/Sub-admin) are managed via custom middleware.
+## 🔐 Administrative Access
+
+The secure dashboard is located at `/admin`. Role-based access control (Admin/Sub-admin) is strictly enforced via custom middleware.
 
 ## 📄 License
 
-The project is proprietary software belonging to Clew.
+This project is proprietary software belonging to **Clew**. All rights reserved.
