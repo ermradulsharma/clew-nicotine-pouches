@@ -58,76 +58,8 @@ class CheckoutController extends Controller
         return view('public.checkout', ['carts' => $carts, 'couponDiscount' => $couponDiscount, 'countries' => $countries, 'states' => $states, 'checkout_id' => $checkout_id, 'checkout' => $checkout]);
     }
 
-    public function store(Request $request)
+    public function store(\App\Http\Requests\CheckoutRequest $request)
     {
-        // return session()->getId();
-        $validator = Validator::make($request->all(), [
-            'first_name' => 'required|max:255',
-            'last_name' => 'required|max:255',
-            'address' => 'required',
-            'apartment' => 'required',
-            'country' => 'required|max:255',
-            'state' => 'required|max:255',
-            'city' => 'required|max:255',
-            'pincode' => 'required|numeric',
-            'mobile' => 'required|numeric|digits:10',
-            'dob' => 'required|date',
-            'billing_first_name' => 'exclude_if:samebilling,1|max:255',
-            'billing_last_name' => 'exclude_if:samebilling,1|max:255',
-            'billing_address' => 'exclude_if:samebilling,1',
-            'billing_apartment' => 'exclude_if:samebilling,1',
-            'billing_country' => 'exclude_if:samebilling,1|max:255',
-            'billing_state' => 'exclude_if:samebilling,1|max:255',
-            'billing_city' => 'exclude_if:samebilling,1|max:255',
-            'billing_pincode' => 'exclude_if:samebilling,1|numeric',
-            'billing_mobile' => 'exclude_if:samebilling,1|numeric|digits:10',
-        ]);
-        if ($validator->fails()) {
-            return response()->json(['res' => 'invalid', 'msg' => $validator->messages()]);
-        }
-        /* $ageCheckerData = [
-            "key" => "NFWinwircKadRISA9SzkZ5aIaGCPU4n6",
-            "secret" => "qWWYIYnanacvUYgv",
-            "data" => [
-                "first_name" => $request->first_name,
-                "last_name" => $request->last_name,
-                "address" => $request->address,
-                "city" => $request->city,
-                "state" => \App\Models\State::where('id', $request->state)->value('code'),
-                "zip" => $request->pincode,
-                "country" => \App\Models\Country::where('id', $request->country)->value('code'),
-                "dob_day" => 20,
-                "dob_month" => 12,
-                "dob_year" => 1989
-            ],
-            "options" => [
-                "min_age" => 21
-            ]
-        ];
-        $ageChecker = Helper::ageChecker($ageCheckerData);
-        $ageCheckerData = json_decode($ageChecker);
-        if ($ageCheckerData->status != "accepted") {
-            switch ($ageCheckerData->status) {
-                case 'denied':
-                    $response = response()->json(['res' => 'denied', 'msg' => 'The verification request was denied. The customer may be underage or submitted an invalid ID (blurry, wrong name, etc.)']);
-                    break;
-                case 'signature':
-                    $response = response()->json(['res' => 'denied', 'msg' => 'An e-signature is required from the customer.']);
-                    break;
-                case 'photo_id':
-                    $response = response()->json(['res' => 'denied', 'msg' => 'A photo ID is required, the customer has not yet uploaded it.']);
-                    break;
-                case 'phone_validation':
-                    $response = response()->json(['res' => 'denied', 'msg' => 'Customer must validate their mobile phone number via SMS code.']);
-                    break;
-                case 'pending':
-                    $response = response()->json(['res' => 'denied', 'msg' => 'A photo ID was uploaded and is awaiting manual approval.']);
-                    break;
-                default:
-                    $response = response()->json(['res' => 'denied', 'msg' => 'An error occurred which prevented your request from being fulfilled. Typically due to missing or invalid data.']);
-            }
-            return $response;
-        } */
         $billingState = $request->state;
         $cartProducts = CartTemp::where('session_id', session()->getId())->get();
         $restrictedProducts = [];

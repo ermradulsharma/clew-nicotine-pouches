@@ -49,7 +49,10 @@ class Order extends Model
 
         'pg_id',
         'pg_amount',
-        'pg_status'
+        'pg_status',
+        'transaction_id',
+        'total_paid',
+        'payment_date'
     ];
 
     public function Cart()

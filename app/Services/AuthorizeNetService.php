@@ -74,6 +74,8 @@ class AuthorizeNetService
 
     /**
      * Add a new payment method (card) to an existing customer profile.
+     * 
+     * @return string|null The payment profile ID or null on failure.
      */
     public function addPaymentProfileToCustomer($customerProfileId, array $cardData)
     {
@@ -119,12 +121,17 @@ class AuthorizeNetService
         $request->setPaymentProfile($paymentProfile);
         $request->setValidationMode("testMode");
 
-        /** @var GetCustomerPaymentProfile $response */
+        /** @var \net\authorize\api\contract\v1\CreateCustomerPaymentProfileResponse $createResponse */
         $controller = new AnetController\CreateCustomerPaymentProfileController($request);
         $createResponse =  $controller->executeWithApiResponse($this->environment());
 
         if ($createResponse !== null && $createResponse->getMessages()->getResultCode() === "Ok") {
-            return $createResponse->getCustomerPaymentProfileId();
+            if (method_exists($createResponse, 'getCustomerPaymentProfileId')) {
+                return $createResponse->getCustomerPaymentProfileId();
+            }
+
+            // Fallback for some SDK versions or unexpected response structures
+            return $this->getPaymentProfileIdIfExists($customerProfileId, substr($cardData['number'], -4));
         } else {
             $msg = $createResponse ? $createResponse->getMessages()->getMessage()[0]->getText() : "Null response";
             throw new Exception("Failed to create payment profile: " . $msg);
@@ -133,6 +140,8 @@ class AuthorizeNetService
 
     /**
      * Charge a customer using a saved payment profile.
+     * 
+     * @return \net\authorize\api\contract\v1\CreateTransactionResponse|null
      */
     public function chargeSavedProfile($customerProfileId, $paymentProfileId, $amount)
     {

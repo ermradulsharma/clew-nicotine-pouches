@@ -62,12 +62,10 @@ class AuthorizeNetController extends Controller
     }
     public function addPaymentProfile(Request $request, $customerProfileId)
     {
-        /** @var \net\authorize\api\contract\v1\CreateCustomerProfileResponse $response */
-        $response = $this->authorizeNet->addPaymentProfileToCustomer($customerProfileId, $request->all());
-        if ($response && $response->getMessages()->getResultCode() === 'Ok') {
+        /** @var string|null $paymentProfileId */
+        $paymentProfileId = $this->authorizeNet->addPaymentProfileToCustomer($customerProfileId, $request->all());
 
-            $paymentProfileIdList = $response->getCustomerPaymentProfileIdList();
-            $paymentProfileId = $paymentProfileIdList ? $paymentProfileIdList[0] : null;
+        if ($paymentProfileId) {
             \App\Models\CustomerPaymentProfile::create([
                 'user_id' => 1,
                 'customer_profile_id' => $customerProfileId,
@@ -76,8 +74,22 @@ class AuthorizeNetController extends Controller
                 'card_type' => $this->getCardType($request->number),
                 'is_default' => true,
             ]);
+
+            return response()->json([
+                'messages' => [
+                    'resultCode' => 'Ok',
+                    'message' => [['text' => 'Payment profile added successfully.']]
+                ],
+                'customerPaymentProfileId' => $paymentProfileId
+            ]);
         }
-        return response()->json($response);
+
+        return response()->json([
+            'messages' => [
+                'resultCode' => 'Error',
+                'message' => [['text' => 'Failed to add payment profile.']]
+            ]
+        ], 400);
     }
 
     // public function charge(Request $request)
@@ -220,12 +232,11 @@ class AuthorizeNetController extends Controller
             if ($response && $response->getMessages()->getResultCode() === 'Ok') {
                 $profileId = $response->getCustomerProfileId();
                 // Log::info('profile id', print_r($profileId, ));
-                $responsePaymentProfile = $this->authorizeNet->addPaymentProfileToCustomer($profileId, $details);
+                $responsePaymentProfileId = $this->authorizeNet->addPaymentProfileToCustomer($profileId, $details);
 
-                // return $responsePaymentProfile->getMessages()->getResultCode();
+                // return $responsePaymentProfileId->getMessages()->getResultCode();
 
-                Log::info('responsePaymentProfile', json_decode(json_encode($responsePaymentProfile), true));
-                if ($responsePaymentProfile && $responsePaymentProfile->getMessages()->getResultCode() === 'Ok') {
+                if ($responsePaymentProfileId) {
                     $paymentProfileIds = $response->getCustomerPaymentProfileIdList();
                     // Log::info('paymentProfileIds', print_r($paymentProfileIds));
                     Log::info('paymentProfileIds', json_decode(json_encode($paymentProfileIds), true));
@@ -243,9 +254,9 @@ class AuthorizeNetController extends Controller
                         }
                     }
                     $paymentProfile = CustomerPaymentProfile::where(['user_id' => $userId, 'customer_profile_id' => $profileId, 'card_last_four' => $lastFourDigits])->first();
-                    /** @var \net\authorize\api\contract\v1\CreateTransactionResponse $charge */
+                    /** @var \net\authorize\api\contract\v1\CreateTransactionResponse|null $charge */
                     $charge = $this->authorizeNet->chargeSavedProfile($profileId, $paymentProfile->payment_profile_id, $amount);
-                    if ($charge && $charge->getMessages()->getResultCode() === 'Ok') {
+                    if ($charge && $charge->getMessages()->getResultCode() === 'Ok' && method_exists($charge, 'getTransactionResponse')) {
                         $transaction = $charge->getTransactionResponse();
                         if ($transaction && $transaction->getResponseCode() === '1') {
                             Payment::create([
@@ -267,16 +278,16 @@ class AuthorizeNetController extends Controller
                 } else {
                     return response()->json([
                         'success' => false,
-                        'message' => $responsePaymentProfile->getMessages(),
+                        'message' => 'Failed to retrieve or create payment profile',
                     ], 500);
                 }
             }
         } else {
             $matchedProfile = $customerProfiles->firstWhere('card_last_four', $lastFourDigits);
             if ($matchedProfile) {
-                /** @var \net\authorize\api\contract\v1\CreateTransactionResponse $charge */
+                /** @var \net\authorize\api\contract\v1\CreateTransactionResponse|null $charge */
                 $charge = $this->authorizeNet->chargeSavedProfile($matchedProfile->customer_profile_id, $matchedProfile->payment_profile_id, $amount);
-                if ($charge && $charge->getMessages()->getResultCode() === 'Ok') {
+                if ($charge && $charge->getMessages()->getResultCode() === 'Ok' && method_exists($charge, 'getTransactionResponse')) {
                     $transaction = $charge->getTransactionResponse();
                     if ($transaction && $transaction->getResponseCode() === '1') {
                         Payment::create([

@@ -46,4 +46,9 @@ return [
         'ig_token' => env('INSTAGRAM_ACCESS_TOKEN'),
         'ig_user_id' => env('INSTAGRAM_USER_ID'),
     ],
+
+    'agechecker' => [
+        'key' => env('AGECHECKER_KEY'),
+        'secret' => env('AGECHECKER_SECRET'),
+    ],
 ];

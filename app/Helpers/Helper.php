@@ -52,7 +52,7 @@ class Helper
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'X-AgeChecker-Secret: sample_secret5e9'
+            'X-AgeChecker-Secret: ' . config('services.agechecker.secret')
         ]);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
@@ -70,7 +70,7 @@ class Helper
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'X-AgeChecker-Secret: qWWYIYnanacvUYgv'
+            'X-AgeChecker-Secret: ' . config('services.agechecker.secret')
         ]);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
