@@ -1,0 +1,35 @@
+[
+    {
+        "id": 5,
+        "title": "Tobacco",
+        "position": 3,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2024-11-25 08:26:26",
+        "updated_at": "2025-03-10 14:35:43",
+        "deleted_at": null
+    },
+    {
+        "id": 6,
+        "title": "Fruity",
+        "position": 2,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2024-11-25 08:26:54",
+        "updated_at": "2025-03-10 14:35:43",
+        "deleted_at": null
+    },
+    {
+        "id": 7,
+        "title": "Mints",
+        "position": 1,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2024-11-25 08:27:14",
+        "updated_at": "2024-12-05 00:49:19",
+        "deleted_at": null
+    }
+]

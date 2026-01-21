@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('products', function (Blueprint $table) {
-           $table->string('restricted_state')->nullable()->after('created_by');
+        Schema::create('mappings', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->string('path')->nullable();
+            $table->string('alias');
+            $table->timestamps();
         });
     }
 
@@ -21,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('products', function (Blueprint $table) {
-            $table->dropColumn('restricted_state');
-        });
+        Schema::dropIfExists('mappings');
     }
 };

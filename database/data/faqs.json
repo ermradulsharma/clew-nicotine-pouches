@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "How to use Nicotine Pouches?",
+        "description": "Place a nicotine pouch between your gum and upper lip. Keep it there for about 45 minutes, then dispose it in the waste container.",
+        "position": 1,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2025-02-28 00:35:27",
+        "updated_at": "2025-02-28 00:35:27",
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "title": "What is the Difference Between Nicotine Pouches and Snus?",
+        "description": "CLEW and Snus are two distinct products. Snus is a traditional oral tobacco product made from air-dried tobacco, while CLEW is a new-generation oral nicotine product that contains no tobacco.",
+        "position": 2,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2025-02-28 00:43:40",
+        "updated_at": "2025-02-28 00:43:40",
+        "deleted_at": null
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "About CLEW",
+        "image": "aboutClew.jpg",
+        "description": "At CLEW, we are redefining nicotine satisfaction with our premium nicotine pouches, crafted with precision in the USA. Combining innovative technology with high-quality ingredients, our pouches deliver a smooth, long-lasting experience. With a range of strengths and enduring flavors, CLEW is your go-to choice for a modern, satisfying nicotine alternative. Ditch the ordinary and experience Nicotine Reimagined with CLEW.",
+        "om_title": "Our Mission",
+        "om_image": "our-mission-img.png",
+        "om_description": "We refused to settle for the ordinary in nicotine products. CLEW is redefining nicotine science by creating advanced solutions that prioritize harm reduction for adult smokers. Our goal is to offer safer, more satisfying alternatives, helping accelerate the global shift away from cigarettes and paving the way for a smoke-free future.",
+        "ov_title": "Our Values",
+        "ov_image": "our-values-img.png",
+        "ov_description": "Driven by an uncompromising commitment to quality, we ensure our products are crafted to your satisfaction. Upholding the highest global standards in regulations and compliance, we implement rigorous age-gating measures to prevent access to those under the legal age. Our partnerships foster mutual growth, supporting success for suppliers, distributors, retailers, and employees. Sustainability remains central to our mission, as we continuously strive to minimize our environmental footprint and maintain full transparency in our practices.",
+        "qa_title": "Quality Assurance",
+        "qa_image": "quality-assurance-banner.jpg",
+        "qa_description": "Quality is at the heart of everything we do. We are unwavering in our commitment to excellence, ensuring that every product we offer is best-in-class. From meticulous attention to device functionality and flavor profiling to the selection of premium ingredients, we leave no stone unturned in our pursuit of perfection. Your satisfaction drives us, and we strive to deliver an extraordinary experience with each and every product.",
+        "ni_title": "About",
+        "ni_image": "navcore-img.png",
+        "ni_description": "NEVCORE Innovations stands at the forefront of nicotine harm reduction, championing a future where indulgence meets responsibility. As a global leader in premium next-generation products, we specialize in modern oral nicotine pouches, vaping disposables, and energy pouches. Produced in our cutting-edge, cGMP-certified, and FDA-licensed facilities, our products guarantee the highest standards of safety and excellence.",
+        "m_title": "Manufacturing",
+        "m_image": "manufacturing-video-img.png",
+        "m_video": "tmNfXLWPu4A",
+        "m_description": "CLEW is a global leader in next-generation product manufacturing, partnering with NEVCORE Innovation to deliver best-in-class oral nicotine pouches and disposables. Our cutting-edge research and development team crafts innovative products using premium ingredients and unique flavor profiles tailored to market demands. We maintain a robust sourcing network, ensuring that all suppliers meet rigorous quality standards. With state-of-the-art cGMP manufacturing processes, we guarantee precision and product integrity at every stage, enabling us to fulfil high-volume orders seamlessly.",
+        "status": 0,
+        "created_by": 0,
+        "updated_by": 1,
+        "created_at": null,
+        "updated_at": "2024-12-26 01:40:36",
+        "deleted_at": null
+    }
+]

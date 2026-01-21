@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "title": "admins",
+        "path": "",
+        "alias": "Admin",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 2,
+        "title": "categories",
+        "path": "category",
+        "alias": "Category",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 3,
+        "title": "products",
+        "path": "product",
+        "alias": "Product",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 4,
+        "title": "product_images",
+        "path": "product",
+        "alias": "ProductImage",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 5,
+        "title": "product_variants",
+        "path": "",
+        "alias": "ProductVariant",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 6,
+        "title": "product_reviews",
+        "path": "",
+        "alias": "ProductReview",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 7,
+        "title": "contacts",
+        "path": "",
+        "alias": "Contact",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 8,
+        "title": "get_in_touches",
+        "path": "",
+        "alias": "GetInTouch",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 9,
+        "title": "newsletter_subscriptions",
+        "path": "",
+        "alias": "NewsletterSubscription",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 10,
+        "title": "banners",
+        "path": "banner",
+        "alias": "Banner",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 11,
+        "title": "promises",
+        "path": "promise",
+        "alias": "Promise",
+        "created_at": "2019-11-29 05:41:00",
+        "updated_at": null
+    },
+    {
+        "id": 12,
+        "title": "processes",
+        "path": "process",
+        "alias": "Process",
+        "created_at": "2019-11-29 05:41:00",
+        "updated_at": null
+    },
+    {
+        "id": 13,
+        "title": "coupons",
+        "path": "coupon",
+        "alias": "Coupon",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 14,
+        "title": "users",
+        "path": "user",
+        "alias": "User",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 15,
+        "title": "flavours",
+        "path": "",
+        "alias": "Flavour",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 16,
+        "title": "tickers",
+        "path": "",
+        "alias": "Ticker",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 17,
+        "title": "countries",
+        "path": "",
+        "alias": "Country",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 18,
+        "title": "states",
+        "path": "",
+        "alias": "State",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 19,
+        "title": "awards",
+        "path": "award",
+        "alias": "Award",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 20,
+        "title": "strengths",
+        "path": "",
+        "alias": "Strength",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 21,
+        "title": "labels",
+        "path": "",
+        "alias": "Label",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 22,
+        "title": "product_similars",
+        "path": "",
+        "alias": "ProductSimilar",
+        "created_at": "2022-03-11 07:54:00",
+        "updated_at": null
+    },
+    {
+        "id": 23,
+        "title": "faqs",
+        "path": "",
+        "alias": "FAQ",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 24,
+        "title": "press_releases",
+        "path": "press-release",
+        "alias": "PressRelease",
+        "created_at": "2020-07-17 07:27:35",
+        "updated_at": null
+    },
+    {
+        "id": 25,
+        "title": "discounts",
+        "path": null,
+        "alias": "Discount",
+        "created_at": null,
+        "updated_at": null
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "meta_id": 1,
+        "post_id": 2,
+        "meta_key": "_wp_page_template",
+        "meta_value": "default"
+    },
+    {
+        "meta_id": 2,
+        "post_id": 3,
+        "meta_key": "_wp_page_template",
+        "meta_value": "default"
+    },
+    {
+        "meta_id": 3,
+        "post_id": 6,
+        "meta_key": "_edit_lock",
+        "meta_value": "1734679221:1"
+    },
+    {
+        "meta_id": 4,
+        "post_id": 8,
+        "meta_key": "_wp_attached_file",
+        "meta_value": "2024/12/blog_05.jpg"
+    }
+]

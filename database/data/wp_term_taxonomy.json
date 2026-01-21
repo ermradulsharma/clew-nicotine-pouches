@@ -1,0 +1,18 @@
+[
+    {
+        "term_taxonomy_id": 1,
+        "term_id": 1,
+        "taxonomy": "category",
+        "description": "",
+        "parent": 0,
+        "count": 3
+    },
+    {
+        "term_taxonomy_id": 2,
+        "term_id": 2,
+        "taxonomy": "wp_theme",
+        "description": "",
+        "parent": 0,
+        "count": 1
+    }
+]

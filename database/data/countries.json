@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "USA",
+        "image": "1732091021-usa.png",
+        "code": "US",
+        "position": 1,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2024-11-20 02:53:42",
+        "updated_at": "2024-11-20 02:53:42",
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "title": "India",
+        "image": "1732096111-india.png",
+        "code": "IN",
+        "position": 2,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2024-11-20 04:18:31",
+        "updated_at": "2024-11-20 04:18:31",
+        "deleted_at": null
+    }
+]

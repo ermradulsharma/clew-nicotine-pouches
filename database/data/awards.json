@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Europe Inter TABAC Dortmund 2024",
+        "image": "1732706541-europe-awards.jpg",
+        "position": 1,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2024-10-20 23:27:55",
+        "updated_at": "2024-11-27 00:22:22",
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "title": "Africa Vape Con South Africa 2024",
+        "image": "1732706587-africa-awards.jpg",
+        "position": 2,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2024-11-27 00:23:07",
+        "updated_at": "2024-11-27 00:23:07",
+        "deleted_at": null
+    },
+    {
+        "id": 3,
+        "title": "MENA Vape Awards 2024",
+        "image": "1732706620-mena-awards.jpg",
+        "position": 3,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2024-11-27 00:23:40",
+        "updated_at": "2024-11-27 00:23:40",
+        "deleted_at": null
+    },
+    {
+        "id": 4,
+        "title": "Southeast Asia Anty Malaysia 2024",
+        "image": "1732706663-sa-awards.jpg",
+        "position": 4,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2024-11-27 00:24:23",
+        "updated_at": "2024-11-27 00:24:23",
+        "deleted_at": null
+    },
+    {
+        "id": 5,
+        "title": "UK Vapouround Global Awards 2024",
+        "image": "1732706748-uk-awards.jpg",
+        "position": 5,
+        "status": 1,
+        "created_by": 1,
+        "updated_by": 0,
+        "created_at": "2024-11-27 00:25:48",
+        "updated_at": "2024-11-27 00:25:48",
+        "deleted_at": null
+    }
+]

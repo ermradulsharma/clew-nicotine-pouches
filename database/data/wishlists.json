@@ -1,0 +1,156 @@
+[
+    {
+        "id": 8,
+        "user_id": 1,
+        "product_id": 2,
+        "product_name": "Clew Watermelon Flavour",
+        "product_image": "1729492874-clew-spearmint-flavour.jpg",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2024-11-21 06:36:13",
+        "updated_at": "2024-11-21 06:36:13"
+    },
+    {
+        "id": 16,
+        "user_id": 5,
+        "product_id": 2,
+        "product_name": "CLEW Watermelon",
+        "product_image": "1733218435-Watermelon 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2024-12-09 06:27:47",
+        "updated_at": "2024-12-09 06:27:47"
+    },
+    {
+        "id": 17,
+        "user_id": 5,
+        "product_id": 4,
+        "product_name": "CLEW Wintergreen",
+        "product_image": "1733217537-Wintergreen 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2024-12-09 06:41:14",
+        "updated_at": "2024-12-09 06:41:14"
+    },
+    {
+        "id": 22,
+        "user_id": 2,
+        "product_id": 5,
+        "product_name": "CLEW Golden Tobacco",
+        "product_image": "1733217130-Golden Tabacoo 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2024-12-13 05:43:17",
+        "updated_at": "2024-12-13 05:43:17"
+    },
+    {
+        "id": 24,
+        "user_id": 5,
+        "product_id": 1,
+        "product_name": "CLEW Spearmint",
+        "product_image": "1733218800-Spearmint 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2024-12-13 09:44:43",
+        "updated_at": "2024-12-13 09:44:43"
+    },
+    {
+        "id": 25,
+        "user_id": 5,
+        "product_id": 5,
+        "product_name": "CLEW Golden Tobacco",
+        "product_image": "1733217130-Golden Tabacoo 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2024-12-17 04:05:27",
+        "updated_at": "2024-12-17 04:05:27"
+    },
+    {
+        "id": 27,
+        "user_id": 20,
+        "product_id": 1,
+        "product_name": "CLEW Spearmint",
+        "product_image": "1733218800-Spearmint 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-05-01 10:31:23",
+        "updated_at": "2025-05-01 10:31:23"
+    },
+    {
+        "id": 28,
+        "user_id": 20,
+        "product_id": 4,
+        "product_name": "CLEW Wintergreen",
+        "product_image": "1733217537-Wintergreen 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-05-01 10:34:08",
+        "updated_at": "2025-05-01 10:34:08"
+    },
+    {
+        "id": 29,
+        "user_id": 20,
+        "product_id": 2,
+        "product_name": "CLEW Watermelon",
+        "product_image": "1733218435-Watermelon 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-06-09 10:06:21",
+        "updated_at": "2025-06-09 10:06:21"
+    },
+    {
+        "id": 30,
+        "user_id": 20,
+        "product_id": 3,
+        "product_name": "CLEW Cool Mint",
+        "product_image": "1733218104-Cool Mint 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-06-09 10:06:23",
+        "updated_at": "2025-06-09 10:06:23"
+    },
+    {
+        "id": 31,
+        "user_id": 20,
+        "product_id": 5,
+        "product_name": "CLEW Golden Tobacco",
+        "product_image": "1733217130-Golden Tabacoo 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-06-09 10:06:26",
+        "updated_at": "2025-06-09 10:06:26"
+    },
+    {
+        "id": 32,
+        "user_id": 20,
+        "product_id": 6,
+        "product_name": "CLEW Citrus",
+        "product_image": "1733216481-Citrus 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-06-09 10:06:28",
+        "updated_at": "2025-06-09 10:06:28"
+    },
+    {
+        "id": 33,
+        "user_id": 20,
+        "product_id": 7,
+        "product_name": "CLEW Blueberry",
+        "product_image": "1733143194-Blueberry 3 mg side view-min.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-06-09 10:06:29",
+        "updated_at": "2025-06-09 10:06:29"
+    },
+    {
+        "id": 34,
+        "user_id": 20,
+        "product_id": 8,
+        "product_name": "CLEW Blueberry Testing",
+        "product_image": "1747121736-Argentina_Licencia_de_conducir_2017.png",
+        "created_by": 0,
+        "updated_by": 0,
+        "created_at": "2025-06-09 10:06:31",
+        "updated_at": "2025-06-09 10:06:31"
+    }
+]

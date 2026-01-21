@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "role_id": 1,
+        "name": "Admin",
+        "email": "info@syruptech.com",
+        "username": "admin",
+        "password": "$2y$10$2SVRs1dkQ5pv652oN6o8zOMqEqUfbHEwhqA3CrgmNxoJdRq2roSHu",
+        "remember_token": null,
+        "status": 1,
+        "created_at": "2023-03-24 11:14:20",
+        "updated_at": "2025-03-10 17:14:40"
+    }
+]

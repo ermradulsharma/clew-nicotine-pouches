@@ -1,0 +1,14 @@
+[
+    {
+        "ID": 1,
+        "user_login": "admin",
+        "user_pass": "$P$BURfi9rGiPLoT1dxyOehWxoZWboYRj0",
+        "user_nicename": "admin",
+        "user_email": "mrashid@syruptech.com",
+        "user_url": "https://localhost/project/clew-blog",
+        "user_registered": "2024-12-13 07:05:56",
+        "user_activation_key": "",
+        "user_status": 0,
+        "display_name": "admin"
+    }
+]

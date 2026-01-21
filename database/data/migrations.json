@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "migration": "2014_10_12_000000_create_users_table",
+        "batch": 1
+    },
+    {
+        "id": 2,
+        "migration": "2014_10_12_100000_create_password_reset_tokens_table",
+        "batch": 1
+    },
+    {
+        "id": 3,
+        "migration": "2019_08_19_000000_create_failed_jobs_table",
+        "batch": 1
+    },
+    {
+        "id": 4,
+        "migration": "2019_12_14_000001_create_personal_access_tokens_table",
+        "batch": 1
+    },
+    {
+        "id": 5,
+        "migration": "2014_10_12_100000_create_password_resets_table",
+        "batch": 2
+    },
+    {
+        "id": 6,
+        "migration": "2025_04_10_101419_create_customer_payment_profiles_table",
+        "batch": 3
+    },
+    {
+        "id": 7,
+        "migration": "2025_04_10_101445_create_payments_table",
+        "batch": 3
+    },
+    {
+        "id": 8,
+        "migration": "2025_04_10_101451_create_payment_logs_table",
+        "batch": 3
+    },
+    {
+        "id": 9,
+        "migration": "2025_04_10_101820_add_payment_fields_to_orders_table",
+        "batch": 4
+    },
+    {
+        "id": 10,
+        "migration": "2025_05_13_062233_add_col_restric_state_to_products_table",
+        "batch": 5
+    },
+    {
+        "id": 11,
+        "migration": "2025_06_10_074531_create_settings_table",
+        "batch": 6
+    },
+    {
+        "id": 12,
+        "migration": "2025_06_12_111617_create_discounts_table",
+        "batch": 7
+    }
+]

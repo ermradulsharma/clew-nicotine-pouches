@@ -1,0 +1,68 @@
+[
+    {
+        "umeta_id": 1,
+        "user_id": 1,
+        "meta_key": "nickname",
+        "meta_value": "admin"
+    },
+    {
+        "umeta_id": 2,
+        "user_id": 1,
+        "meta_key": "first_name",
+        "meta_value": ""
+    },
+    {
+        "umeta_id": 3,
+        "user_id": 1,
+        "meta_key": "last_name",
+        "meta_value": ""
+    },
+    {
+        "umeta_id": 4,
+        "user_id": 1,
+        "meta_key": "description",
+        "meta_value": ""
+    },
+    {
+        "umeta_id": 5,
+        "user_id": 1,
+        "meta_key": "rich_editing",
+        "meta_value": "true"
+    },
+    {
+        "umeta_id": 6,
+        "user_id": 1,
+        "meta_key": "syntax_highlighting",
+        "meta_value": "true"
+    },
+    {
+        "umeta_id": 7,
+        "user_id": 1,
+        "meta_key": "comment_shortcuts",
+        "meta_value": "false"
+    },
+    {
+        "umeta_id": 8,
+        "user_id": 1,
+        "meta_key": "admin_color",
+        "meta_value": "blue"
+    },
+    {
+        "umeta_id": 9,
+        "user_id": 1,
+        "meta_key": "use_ssl",
+        "meta_value": 0
+    },
+    {
+        "umeta_id": 10,
+        "user_id": 1,
+        "meta_key": "show_admin_bar_front",
+        "meta_value": "true"
+    },
+    {
+        "umeta_id": 11,
+        "user_id": 1,
+        "meta_key": "locale",
+        "meta_value": ""
+    }
+]
